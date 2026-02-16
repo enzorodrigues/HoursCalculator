@@ -14,19 +14,11 @@
 			remoteGlobalIDString = F3EE8EBE2F436A9500D333BA;
 			remoteInfo = HoursCalculator;
 		};
-		F3EE8ED72F436A9600D333BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3EE8EB72F436A9500D333BA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3EE8EBE2F436A9500D333BA;
-			remoteInfo = HoursCalculator;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F3EE8EBF2F436A9500D333BA /* HoursCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoursCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EE8ECC2F436A9500D333BA /* HoursCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoursCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3EE8ED62F436A9600D333BA /* HoursCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoursCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		F3EE8ECF2F436A9500D333BA /* HoursCalculatorTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = HoursCalculatorTests;
-			sourceTree = "<group>";
-		};
-		F3EE8ED92F436A9600D333BA /* HoursCalculatorUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HoursCalculatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3EE8ED32F436A9600D333BA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				F3EE8EC12F436A9500D333BA /* HoursCalculator */,
 				F3EE8ECF2F436A9500D333BA /* HoursCalculatorTests */,
-				F3EE8ED92F436A9600D333BA /* HoursCalculatorUITests */,
 				F3EE8EC02F436A9500D333BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				F3EE8EBF2F436A9500D333BA /* HoursCalculator.app */,
 				F3EE8ECC2F436A9500D333BA /* HoursCalculatorTests.xctest */,
-				F3EE8ED62F436A9600D333BA /* HoursCalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = F3EE8ECC2F436A9500D333BA /* HoursCalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F3EE8ED52F436A9600D333BA /* HoursCalculatorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3EE8EE62F436A9600D333BA /* Build configuration list for PBXNativeTarget "HoursCalculatorUITests" */;
-			buildPhases = (
-				F3EE8ED22F436A9600D333BA /* Sources */,
-				F3EE8ED32F436A9600D333BA /* Frameworks */,
-				F3EE8ED42F436A9600D333BA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3EE8ED82F436A9600D333BA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F3EE8ED92F436A9600D333BA /* HoursCalculatorUITests */,
-			);
-			name = HoursCalculatorUITests;
-			packageProductDependencies = (
-			);
-			productName = HoursCalculatorUITests;
-			productReference = F3EE8ED62F436A9600D333BA /* HoursCalculatorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,18 +135,14 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = F3EE8EBE2F436A9500D333BA;
 					};
-					F3EE8ED52F436A9600D333BA = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = F3EE8EBE2F436A9500D333BA;
-					};
 				};
 			};
 			buildConfigurationList = F3EE8EBA2F436A9500D333BA /* Build configuration list for PBXProject "HoursCalculator" */;
-			developmentRegion = en;
+			developmentRegion = "pt-BR";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = F3EE8EB62F436A9500D333BA;
 			minimizedProjectReferenceProxies = 1;
@@ -202,7 +153,6 @@
 			targets = (
 				F3EE8EBE2F436A9500D333BA /* HoursCalculator */,
 				F3EE8ECB2F436A9500D333BA /* HoursCalculatorTests */,
-				F3EE8ED52F436A9600D333BA /* HoursCalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3EE8ECA2F436A9500D333BA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3EE8ED42F436A9600D333BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3EE8ED22F436A9600D333BA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +196,6 @@
 			isa = PBXTargetDependency;
 			target = F3EE8EBE2F436A9500D333BA /* HoursCalculator */;
 			targetProxy = F3EE8ECD2F436A9500D333BA /* PBXContainerItemProxy */;
-		};
-		F3EE8ED82F436A9600D333BA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3EE8EBE2F436A9500D333BA /* HoursCalculator */;
-			targetProxy = F3EE8ED72F436A9600D333BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,15 +324,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7P734W4L8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Calcula Horas";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,9 +345,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = enzors.HoursCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -420,15 +361,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7P734W4L8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Calcula Horas";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,9 +382,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = enzors.HoursCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -449,6 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculadora_de_Horas;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = enzors.HoursCalculatorTests;
@@ -467,6 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculadora_de_Horas;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = enzors.HoursCalculatorTests;
@@ -475,38 +428,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoursCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HoursCalculator";
-			};
-			name = Release;
-		};
-		F3EE8EE72F436A9600D333BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = enzors.HoursCalculatorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HoursCalculator;
-			};
-			name = Debug;
-		};
-		F3EE8EE82F436A9600D333BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = enzors.HoursCalculatorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HoursCalculator;
 			};
 			name = Release;
 		};
@@ -536,15 +457,6 @@
 			buildConfigurations = (
 				F3EE8EE42F436A9600D333BA /* Debug */,
 				F3EE8EE52F436A9600D333BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3EE8EE62F436A9600D333BA /* Build configuration list for PBXNativeTarget "HoursCalculatorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3EE8EE72F436A9600D333BA /* Debug */,
-				F3EE8EE82F436A9600D333BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
