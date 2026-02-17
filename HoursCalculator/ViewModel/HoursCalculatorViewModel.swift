@@ -59,7 +59,8 @@ class HoursCalculatorViewModel: ObservableObject {
     
     // MARK: - Completar ao sair do campo
     
-    func completeTimeIfNeeded(_ input: String, for index: Int) {
+    func completeTimeIfNeeded(for index: Int) {
+        let input = timeInputs[index]
         let parts = input.split(separator: ":").map { String($0) }
         
         var hours = parts.count > 0 ? parts[0] : "0"
@@ -76,7 +77,7 @@ class HoursCalculatorViewModel: ObservableObject {
     
     // MARK: - Cálculo
     
-    func calculateTime(operation: Operation) {
+    private func calculateTime(operation: Operation) {
         var totalSeconds = 0
         
         if case .subtract = operation {
@@ -128,5 +129,13 @@ class HoursCalculatorViewModel: ObservableObject {
         timeInputs = [result, ""]
         result = ""
     }
+    
+    func calculate(operation: Operation, lastIndexUpdated: Int?) {
+        if let index = lastIndexUpdated, timeInputs[index].count < 6 {
+            completeTimeIfNeeded(for: index)
+        }
+        calculateTime(operation: operation)
+    }
+    
 }
 
