@@ -53,7 +53,7 @@ struct TimeCalculatorView: View {
     
     private func timeInput(_ title: String, selector: Binding<Date>) -> some View {
         HStack {
-            Text("Horário de Entrada")
+            Text(title)
             Spacer()
             DatePicker(
                 "",
@@ -121,7 +121,7 @@ struct TimeCalculatorView: View {
             .buttonStyle(.borderedProminent)
             
             if !viewModel.result.isEmpty {
-                Text("Resultado Final: \(viewModel.result)")
+                Text("Tempo restante: \(viewModel.result)")
                     .font(.title2)
                     .bold()
                     .padding()
