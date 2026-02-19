@@ -57,24 +57,6 @@ class HoursCalculatorViewModel: ObservableObject {
         timeInputs[index] = formatted
     }
     
-    // MARK: - Completar ao sair do campo
-    
-    func completeTimeIfNeeded(for index: Int) {
-        let input = timeInputs[index]
-        let parts = input.split(separator: ":").map { String($0) }
-        
-        var hours = parts.count > 0 ? parts[0] : "0"
-        var minutes = parts.count > 1 ? parts[1] : "0"
-        var seconds = parts.count > 2 ? parts[2] : "0"
-        
-        // Garante 2 dígitos para minutos e segundos
-        hours = String(format: "%02d", Int(hours) ?? 0)
-        minutes = String(format: "%02d", Int(minutes) ?? 0)
-        seconds = String(format: "%02d", Int(seconds) ?? 0)
-        
-       timeInputs[index] = "\(hours):\(minutes):\(seconds)"
-    }
-    
     // MARK: - Cálculo
     
     private func calculateTime(operation: Operation) {
@@ -132,7 +114,7 @@ class HoursCalculatorViewModel: ObservableObject {
     
     func calculate(operation: Operation, lastIndexUpdated: Int?) {
         if let index = lastIndexUpdated, timeInputs[index].count < 6 {
-            completeTimeIfNeeded(for: index)
+            timeInputs[index] = TimeFormatter.completeTimeIfNeeded(for: timeInputs[index])
         }
         calculateTime(operation: operation)
     }

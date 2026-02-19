@@ -11,7 +11,7 @@ import SwiftUI
 struct HoursCalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            HoursCalculatorView()
+            MainView()
         }
     }
 }

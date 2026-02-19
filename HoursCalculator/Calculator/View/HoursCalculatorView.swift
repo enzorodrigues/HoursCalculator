@@ -51,26 +51,14 @@ struct HoursCalculatorView: View {
     private var timeInputs: some View {
         ScrollView {
             ForEach(viewModel.timeInputs.indices, id: \.self) { index in
-                inputLabels(index: index)
-                    .padding(.horizontal)
+                TimeMaskedTextField(
+                    title: "Tempo \(index + 1):",
+                    placeholder: "HH:mm:ss",
+                    text: $viewModel.timeInputs[index],
+                    focusedField: $focusedIndex, index: index
+                )
+                .padding(.horizontal)
             }
-        }
-    }
-    
-    private func inputLabels(index: Int) -> some View {
-        HStack {
-            Text("Tempo \(index + 1):")
-            
-            TextField("HH:mm:ss", text: $viewModel.timeInputs[index])
-                .keyboardType(.numberPad)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .focused($focusedIndex, equals: index)
-                .onChange(of: focusedIndex) { _, newFocus in
-                    onChangeFocusIndex(newFocus: newFocus, index: index)
-                }
-                .onChange(of: viewModel.timeInputs[index]) { _,  newValue in
-                    viewModel.formatWhileTyping(newValue, for: index)
-                }
         }
     }
     
@@ -116,14 +104,6 @@ struct HoursCalculatorView: View {
         .buttonStyle(.borderedProminent)
         .tint(.green)
         .disabled(focusedIndex != nil)
-    }
-    
-    // MARK: - Functions
-    
-    private func onChangeFocusIndex(newFocus: Int?, index: Int) {
-        if newFocus != index, !viewModel.timeInputs[index].isEmpty {
-            viewModel.completeTimeIfNeeded(for: index)
-        }
     }
 }
 
